@@ -2,9 +2,9 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AppShell } from "@/components/AppShell";
-import { useLocale } from "@/components/LocaleProvider";
-import { createProject } from "@/lib/api";
+import { AppShell } from "../../../components/AppShell";
+import { useLocale } from "../../../components/LocaleProvider";
+import { createProject } from "../../../lib/api";
 
 type Mode = "chat" | "form";
 
@@ -69,7 +69,7 @@ export default function NewProjectPage() {
               <div className="field"><label className="label" htmlFor="name">{t("اسم المشروع", "Project name")}</label><input className="input" id="name" name="name" required /></div>
               <div className="field"><label className="label" htmlFor="client_name">{t("العميل", "Client")}</label><input className="input" id="client_name" name="client_name" /></div>
               <div className="field"><label className="label" htmlFor="production_category">{t("التصنيف الرئيسي", "Main category")}</label><select className="select" id="production_category" name="production_category" defaultValue=""><option value="">{t("اختر…", "Select…")}</option><option value="standard-video">{t("فيديو عادي", "Standard Video")}</option><option value="program">{t("برنامج", "Program")}</option><option value="high-production">High Production</option><option value="documentary">{t("وثائقي", "Documentary")}</option></select></div>
-              <div className="field"><label className="label" htmlFor="production_type">{t("النوع الفرعي", "Subtype")}</label><input className="input" id="production_type" name="production_type" placeholder={t("انترفيو، برومو، بودكاست، TVC…", "Interview, promo, podcast, TVC…")} /></div>
+              <div className="field"><label className="label" htmlFor="production_type">{t("النوع الفرعي", "Subtype")}</label><input className="input" id="production_type" name="production_type" placeholder={t("مقابلة، برومو، بودكاست، TVC…", "Interview, promo, podcast, TVC…")} /></div>
               <div className="field fieldFull"><label className="label" htmlFor="description">{t("وصف المشروع", "Project description")}</label><textarea className="textarea" id="description" name="description" /></div>
             </div>
           )}
