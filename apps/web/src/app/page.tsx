@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { AppShell } from "@/components/AppShell";
-import { useLocale } from "@/components/LocaleProvider";
+import { AppShell } from "../components/AppShell";
+import { useLocale } from "../components/LocaleProvider";
 
 export default function HomePage() {
   const { t } = useLocale();
