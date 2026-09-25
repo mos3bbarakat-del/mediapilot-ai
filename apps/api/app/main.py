@@ -3,7 +3,9 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.routes.automation import router as automation_router
 from app.api.routes.health import router as health_router
+from app.api.routes.media import router as media_router
 from app.api.routes.projects import router as projects_router
 from app.api.routes.rules import router as rules_router
 from app.core.config import get_settings
@@ -21,7 +23,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="MediaPilot AI Core API", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="MediaPilot AI Core API", version="0.2.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origin_list,
@@ -32,3 +34,5 @@ app.add_middleware(
 app.include_router(health_router)
 app.include_router(projects_router)
 app.include_router(rules_router)
+app.include_router(automation_router)
+app.include_router(media_router)
