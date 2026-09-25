@@ -1,0 +1,60 @@
+services:
+  - type: web
+    name: mediapilot-api
+    runtime: python
+    plan: free
+    region: frankfurt
+    repo: https://github.com/mos3bbarakat-del/mediapilot-ai.git
+    branch: enterprise-v1
+    buildCommand: pip install -e apps/api
+    startCommand: uvicorn app.main:app --app-dir apps/api --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: MP_ENV
+        value: staging
+      - key: MP_AUTH_MODE
+        value: development
+      - key: MP_AUTO_CREATE_SCHEMA
+        value: "true"
+      - key: MP_CORS_ORIGINS
+        value: https://mediapilot-enterprise.onrender.com
+      - key: MP_DATABASE_URL
+        fromDatabase:
+          name: mediapilot-postgres
+          property: connectionString
+      - key: MP_REDIS_URL
+        fromService:
+          type: keyvalue
+          name: mediapilot-redis
+          property: connectionString
+
+  - type: web
+    name: mediapilot-enterprise
+    runtime: node
+    plan: free
+    region: frankfurt
+    repo: https://github.com/mos3bbarakat-del/mediapilot-ai.git
+    branch: enterprise-v1
+    buildCommand: cd apps/web && npm install --include=dev && npm run build
+    startCommand: cd apps/web && npm run start -- -p $PORT
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: https://mediapilot-api.onrender.com
+
+  - type: keyvalue
+    name: mediapilot-redis
+    plan: free
+    region: frankfurt
+    maxmemoryPolicy: noeviction
+    ipAllowList: []
+
+databases:
+  - name: mediapilot-postgres
+    plan: free
+    region: frankfurt
+    databaseName: mediapilot_postgres
+    user: mediapilot_postgres_user
