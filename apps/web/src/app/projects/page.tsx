@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AppShell } from "@/components/AppShell";
-import { useLocale } from "@/components/LocaleProvider";
-import { listProjects, type Project } from "@/lib/api";
+import { AppShell } from "../../components/AppShell";
+import { useLocale } from "../../components/LocaleProvider";
+import { listProjects, type Project } from "../../lib/api";
 
 export default function ProjectsPage() {
   const { t } = useLocale();
