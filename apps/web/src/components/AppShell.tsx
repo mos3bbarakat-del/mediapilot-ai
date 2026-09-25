@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useLocale } from "@/components/LocaleProvider";
+import { useLocale } from "./LocaleProvider";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const { lang, toggle, t } = useLocale();
