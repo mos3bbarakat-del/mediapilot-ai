@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { AppShell } from "@/components/AppShell";
-import { useLocale } from "@/components/LocaleProvider";
-import { getProject, type Project } from "@/lib/api";
+import { AppShell } from "../../../components/AppShell";
+import { useLocale } from "../../../components/LocaleProvider";
+import { getProject, type Project } from "../../../lib/api";
 
 const stages = ["Briefing", "Pre-Production", "Production", "Post-Production", "Delivery"];
 
