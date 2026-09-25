@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { LocaleProvider } from "@/components/LocaleProvider";
+import { LocaleProvider } from "../components/LocaleProvider";
 
 export const metadata: Metadata = {
   title: "MediaPilot AI",
