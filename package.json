@@ -1,0 +1,12 @@
+{
+  "name": "mediapilot-ai",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.4.1",
+  "scripts": {
+    "dev:web": "pnpm --filter @mediapilot/web dev",
+    "build:web": "pnpm --filter @mediapilot/web build",
+    "lint:web": "pnpm --filter @mediapilot/web lint",
+    "typecheck:web": "pnpm --filter @mediapilot/web typecheck"
+  }
+}
