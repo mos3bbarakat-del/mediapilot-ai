@@ -5,5 +5,7 @@ cat realestate-b64/00 realestate-b64/01 realestate-b64/02 realestate-b64/03 real
 base64 -d fullstack.b64 > realestate-fullstack.tar.gz
 echo "358c2feb63df39e4f1bc8ae4375229b3c1ae1158b4c4a189d0a55c31cb14f2a1  realestate-fullstack.tar.gz" | sha256sum -c -
 tar -xzf realestate-fullstack.tar.gz
+sed -i 's/INSERT INTO campaigns VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)/INSERT INTO campaigns VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)/g' realestate-fullstack/server.js
+sed -i 's/INSERT INTO interactions VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)/INSERT INTO interactions VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)/g' realestate-fullstack/server.js
 node --check realestate-fullstack/server.js
 node --check realestate-fullstack/public/app.js
