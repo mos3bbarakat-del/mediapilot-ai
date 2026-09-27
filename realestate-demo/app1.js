@@ -1,0 +1,17 @@
+const NAV=[
+ ['نظرة عامة',[['executive','⌂','لوحة الإدارة التنفيذية'],['realtime','◉','لوحة القيادة اللحظية']]],
+ ['العملاء',[['sources','⌁','مصادر العملاء'],['cdp','◎','Customer 360'],['journey','⇢','رحلة العميل'],['lost','⊘','أسباب فقد العملاء']]],
+ ['التسويق',[['campaigns','◫','إدارة الحملات'],['attribution','✦','الإسناد الذكي AI'],['cost','◈','التكلفة والعائد'],['maps','⌖','Google Maps'],['qr','▦','اللوحات و QR Code']]],
+ ['القنوات والشركاء',[['influencers','☆','المؤثرون'],['brokers','♙','الوسطاء'],['callcenter','☎','مركز الاتصال'],['whatsapp','◌','WhatsApp Business']]],
+ ['النظام',[['integrations','⛓','ربط الأنظمة'],['settings','⚙','إعدادات المنصة']]]
+];
+const $=s=>document.querySelector(s);const content=$('#content');
+let current='executive';
+function navRender(){const n=$('#nav');n.innerHTML=NAV.map(([sec,items])=>`<div class="nav-section">${sec}</div>${items.map(([id,icon,label])=>`<button class="nav-item ${id===current?'active':''}" data-page="${id}"><span class="nav-icon">${icon}</span><span>${label}</span>${id==='lost'?'<span class="badge">12</span>':''}</button>`).join('')}`).join('');n.querySelectorAll('.nav-item').forEach(b=>b.onclick=()=>{current=b.dataset.page;navRender();render();$('.sidebar').classList.remove('open')})}
+function fmt(n){return new Intl.NumberFormat('ar-SA').format(n)}
+function kpi(label,value,delta,icon='◈',down=false){return `<div class="kpi"><div class="kpi-top"><span class="kpi-label">${label}</span><span class="kpi-icon">${icon}</span></div><div class="kpi-value">${value}</div><div class="delta ${down?'down':'up'}">${down?'↓':'↑'} ${delta} <span class="muted">مقارنة بالفترة السابقة</span></div></div>`}
+function head(title,sub,actions=''){return `<div class="page-head"><div><h1>${title}</h1><p>${sub}</p></div><div class="head-actions">${actions}</div></div>`}
+function panel(title,body,side='عرض التفاصيل'){return `<div class="panel"><div class="panel-head"><h3>${title}</h3><button>${side}</button></div>${body}</div>`}
+function table(headers,rows){return `<div class="table-wrap"><table class="data-table"><thead><tr>${headers.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
+function bars(){let vals=[[74,46],[92,59],[65,52],[105,70],[114,83],[98,79],[126,91]];return `<div class="chart"><div class="bars">${vals.map((v,i)=>`<div class="bar-col"><i class="bar" style="height:${v[0]}px"></i><i class="bar alt" style="height:${v[1]}px"></i><span class="bar-label">${['أحد','إثنين','ثلاثاء','أربعاء','خميس','جمعة','سبت'][i]}</span></div>`).join('')}</div><div class="legend" style="margin-top:30px"><span><i style="background:#2c6570"></i> العملاء المحتملون</span><span><i style="background:#d5b576"></i> العملاء المؤهلون</span></div></div>`}
+const sourceDonut=`<div class="donut-wrap"><div class="donut"><div class="donut-center"><div><strong>4,826</strong>إجمالي العملاء</div></div></div><div class="donut-legend"><div style="--dot:#214d5c"><span>Google Ads</span><b>36%</b></div><div style="--dot:#2e7f78"><span>Meta</span><b>26%</b></div><div style="--dot:#d5b576"><span>وسطاء</span><b>17%</b></div><div style="--dot:#96a9af"><span>WhatsApp</span><b>12%</b></div><div style="--dot:#d7dfe2"><span>أخرى</span><b>9%</b></div></div></div>`;
