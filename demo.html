@@ -9,12 +9,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 :root{--bg:#071019;--panel:#0d1822;--panel2:#111f2c;--border:rgba(145,175,198,.16);--text:#f5f8fb;--muted:#91a4b5;--cyan:#43d3c2;--blue:#4a9cff;--green:#42d99a;--yellow:#f7c65d;--danger:#ff7474;--font-ar:'IBM Plex Sans Arabic',Arial,sans-serif;--font-en:Inter,Arial,sans-serif}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 70% 0,rgba(58,147,255,.12),transparent 34%),var(--bg);color:var(--text);font-family:var(--font-ar)}body.en{font-family:var(--font-en);direction:ltr}.app{display:grid;grid-template-columns:180px minmax(0,1fr) 330px;min-height:100vh}.sidebar{border-left:1px solid var(--border);padding:20px 12px;position:sticky;top:0;height:100vh;background:#08121b}.en .sidebar{border-left:0;border-right:1px solid var(--border)}.brand{display:flex;gap:10px;align-items:center;padding:0 8px 24px;direction:ltr}.mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,#fff 0 34%,#43d3c2 34% 63%,#7664ff 63%);color:#071019;font-weight:800;display:grid;place-items:center}.brand strong{font-family:var(--font-en);font-size:17px}.brand strong span{color:#43d3c2}.nav{display:flex;flex-direction:column;gap:6px}.nav button{border:0;background:transparent;color:#b9c8d4;border-radius:10px;padding:11px 12px;text-align:inherit;font:inherit;cursor:pointer}.nav button:hover,.nav button.active{background:#142333;color:#fff}.workspace{padding:0 22px 36px;min-width:0}.topbar{height:68px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)}.search{flex:1;max-width:650px;margin-inline:auto;border:1px solid var(--border);background:#0a151f;border-radius:10px;padding:10px 13px;color:#fff}.btn{border:1px solid var(--border);background:#101e2a;color:#fff;border-radius:10px;padding:10px 14px;font:inherit;cursor:pointer}.btn.primary{background:var(--cyan);color:#071019;border-color:transparent;font-weight:700}.page{display:none}.page.active{display:block}.hero{padding:26px 0 18px;display:grid;grid-template-columns:1.5fr .8fr;gap:18px}.hero-card,.panel{border:1px solid var(--border);background:linear-gradient(180deg,rgba(17,31,44,.98),rgba(10,20,29,.98));border-radius:16px;box-shadow:0 18px 50px rgba(0,0,0,.2)}.hero-card{padding:24px}.eyebrow{font-family:var(--font-en);font-size:11px;letter-spacing:1.4px;color:#7f95a7}.hero h1{font-size:34px;margin:8px 0 10px;line-height:1.35}.muted{color:var(--muted)}.hero-actions{display:flex;gap:10px;margin-top:18px}.notice{padding:20px}.notice strong{display:block;margin-bottom:8px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.section-head{display:flex;justify-content:space-between;align-items:center;margin:18px 0 12px}.section-head h2{margin:0;font-size:18px}.model-card,.project-card,.stage-card{border:1px solid var(--border);background:#0c1822;border-radius:14px;padding:16px;transition:.2s}.model-card:hover,.project-card:hover,.stage-card:hover{transform:translateY(-2px);border-color:rgba(67,211,194,.45)}.model-icon{width:42px;height:42px;border-radius:12px;background:#152b38;display:grid;place-items:center;font-size:20px}.model-card h3,.project-card h3,.stage-card h3{margin:12px 0 6px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.chip{font-size:11px;border:1px solid var(--border);border-radius:999px;padding:5px 8px;color:#a9bbca}.project-meta{display:flex;justify-content:space-between;gap:10px;color:#8196a8;font-size:12px}.progress{height:7px;background:#172837;border-radius:99px;overflow:hidden;margin:12px 0 8px}.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--blue));border-radius:99px}.project-layout{padding-top:20px}.project-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.project-head h1{margin:4px 0 4px}.stage-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}.stage-card{min-height:220px;display:flex;flex-direction:column}.stage-num{font-family:var(--font-en);color:#8196a8;font-size:12px}.stage-card p{font-size:12px;color:#91a4b5;line-height:1.7}.stage-card .btn{margin-top:auto}.insights{margin-top:16px;padding:16px}.insight-row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}.insight-row:last-child{border-bottom:0}.assistant{border-right:1px solid var(--border);background:#08121b;display:flex;flex-direction:column;height:100vh;position:sticky;top:0}.en .assistant{border-right:0;border-left:1px solid var(--border)}.assistant-head{padding:18px;border-bottom:1px solid var(--border)}.assistant-head strong{display:block}.assistant-head small{color:#6fe0ad}.chat{padding:16px;display:flex;flex-direction:column;gap:10px;overflow:auto;flex:1}.msg{max-width:92%;padding:11px 12px;border-radius:12px;line-height:1.65;font-size:13px}.msg.bot{background:#101f2b;border:1px solid var(--border)}.msg.user{background:#153245;margin-inline-start:auto}.composer{padding:12px;border-top:1px solid var(--border);display:flex;gap:8px}.composer input{flex:1;border:1px solid var(--border);background:#0c1822;color:#fff;border-radius:10px;padding:10px}.toolbar{display:flex;gap:8px;align-items:center}.lang{font-family:var(--font-en)}.quick-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.quick-actions button{font-size:11px}.hidden{display:none!important}@media(max-width:1100px){.app{grid-template-columns:160px 1fr}.assistant{display:none}.stage-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto}.nav{flex-direction:row;overflow:auto}.workspace{padding:0 14px 28px}.hero,.grid,.stage-grid{grid-template-columns:1fr}.topbar{flex-wrap:wrap;height:auto;padding:12px 0}.search{order:3;max-width:none;width:100%}}
-
-/* Ministry Pipeline */
-.pipeline-page{padding-top:22px}.pipeline-intro{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin-bottom:14px}.pipeline-intro h1{margin:4px 0 6px;font-size:30px}.pipeline-intro p{margin:0;max-width:760px}.pipeline-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.pipeline-stat{border:1px solid var(--border);background:#0c1822;border-radius:14px;padding:15px}.pipeline-stat small{display:block;color:var(--muted);font-size:11px;margin-bottom:6px}.pipeline-stat strong{font-size:22px}.pipeline-filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.pipeline-filter{border:1px solid var(--border);background:#0d1924;color:#b9c8d4;border-radius:999px;padding:7px 11px;font:inherit;font-size:12px;cursor:pointer}.pipeline-filter.active{background:#153245;color:#fff;border-color:rgba(67,211,194,.45)}.pipeline-list{display:flex;flex-direction:column;gap:10px}.pipeline-task{border:1px solid var(--border);background:#0c1822;border-radius:14px;overflow:hidden}.pipeline-task.blocked{border-color:rgba(247,198,93,.35)}.pipeline-task-head{display:grid;grid-template-columns:1.2fr 1.4fr 1.4fr .8fr 28px;gap:12px;align-items:center;padding:15px;cursor:pointer}.pipeline-task-head small{display:block;color:var(--muted);font-size:10px;margin-bottom:4px}.pipeline-task-head strong{font-size:13px;line-height:1.55}.pipeline-task-name strong{font-size:15px}.pipeline-badge{display:inline-flex;margin-top:7px;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:700}.pipeline-badge.active{background:#123949;color:#9fe7dc}.pipeline-badge.wait{background:#3a2d18;color:#ffd88a}.pipeline-badge.ready{background:#173526;color:#9ce4b5}.pipeline-arrow{font-size:18px;color:#7f95a7;transition:.2s}.pipeline-task.open .pipeline-arrow{transform:rotate(180deg)}.pipeline-task-body{display:none;border-top:1px solid var(--border);padding:14px;background:#09141d}.pipeline-task.open .pipeline-task-body{display:block}.pipeline-flow{display:flex;gap:8px;overflow-x:auto;padding-bottom:5px}.pipeline-step{min-width:145px;flex:1;border:1px solid var(--border);background:#0e1b26;border-radius:11px;padding:11px}.pipeline-step small{display:block;color:var(--muted);font-size:10px;margin-bottom:5px}.pipeline-step strong{font-size:12px;line-height:1.5}.pipeline-step.done{border-color:rgba(66,217,154,.3);background:#10231b}.pipeline-step.now{border-color:rgba(74,156,255,.55);background:#10283a}.pipeline-step.wait{border-color:rgba(247,198,93,.35);background:#281f12}.pipeline-foot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}.pipeline-foot div{border:1px solid var(--border);border-radius:10px;padding:10px;background:#0c1822}.pipeline-foot small{display:block;color:var(--muted);font-size:10px;margin-bottom:5px}.pipeline-foot strong{font-size:12px;line-height:1.5}
-@media(max-width:1100px){.pipeline-task-head{grid-template-columns:1fr 1fr}.pipeline-task-name{grid-column:1/-1}.pipeline-arrow{display:none}.pipeline-foot{grid-template-columns:1fr}.pipeline-stats{grid-template-columns:1fr 1fr}}
-@media(max-width:760px){.pipeline-intro{display:block}.pipeline-stats{grid-template-columns:1fr}.pipeline-task-head{grid-template-columns:1fr}.pipeline-task-name{grid-column:auto}.pipeline-step{min-width:135px}}
-
 </style>
 </head>
 <body>
@@ -24,7 +18,7 @@
   <nav class="nav">
     <button class="active" data-page="home" data-ar="الرئيسية" data-en="Home">الرئيسية</button>
     <button data-page="models" data-ar="النماذج" data-en="Models">النماذج</button>
-    <button data-page="projects" data-ar="المشاريع" data-en="Projects">المشاريع</button>\n    <button data-page="pipeline" data-ar="البايب لاين" data-en="Pipeline">البايب لاين</button>
+    <button data-page="projects" data-ar="المشاريع" data-en="Projects">المشاريع</button>
     <button data-page="project" data-ar="مشروع نقال الطيب" data-en="Naqal Al-Tayeb">مشروع نقال الطيب</button>
   </nav>
 </aside>
@@ -68,87 +62,6 @@
     </div>
   </section>
 
-  
-  <section class="page pipeline-page" id="pipeline">
-    <div class="pipeline-intro">
-      <div><span class="eyebrow">MINISTRY OF TRANSPORT</span><h1 data-ar="Pipeline وزارة النقل" data-en="Ministry of Transport Pipeline">Pipeline وزارة النقل</h1><p class="muted" data-ar="كل مهمة لها مسارها الخاص. نعرض فقط: أين توقفت الآن، ما الخطوة التالية، وعلى من الدور." data-en="Every task has its own path. We only show where it stands now, what happens next, and who owns the current action.">كل مهمة لها مسارها الخاص. نعرض فقط: أين توقفت الآن، ما الخطوة التالية، وعلى من الدور.</p></div>
-    </div>
-    <div class="pipeline-stats">
-      <div class="pipeline-stat"><small data-ar="إجمالي المهام" data-en="Total Tasks">إجمالي المهام</small><strong>3</strong></div>
-      <div class="pipeline-stat"><small data-ar="تحتاج إجراء منّا" data-en="Needs Action From Us">تحتاج إجراء منّا</small><strong>2</strong></div>
-      <div class="pipeline-stat"><small data-ar="بانتظار طرف آخر" data-en="Waiting on Others">بانتظار طرف آخر</small><strong>1</strong></div>
-    </div>
-    <div class="pipeline-filters">
-      <button class="pipeline-filter active" data-pipeline-filter="all" data-ar="الكل" data-en="All">الكل</button>
-      <button class="pipeline-filter" data-pipeline-filter="mine" data-ar="عندنا" data-en="With Us">عندنا</button>
-      <button class="pipeline-filter" data-pipeline-filter="waiting" data-ar="انتظار" data-en="Waiting">انتظار</button>
-    </div>
-    <div class="pipeline-list">
-      <article class="pipeline-task open" data-pipeline-group="mine">
-        <div class="pipeline-task-head">
-          <div class="pipeline-task-name"><small>VIDEO</small><strong data-ar="فيديو المنجزات" data-en="Achievements Video">فيديو المنجزات</strong><div class="pipeline-badge active" data-ar="جاري" data-en="Active">جاري</div></div>
-          <div><small data-ar="الآن" data-en="Now">الآن</small><strong data-ar="شرح الفكرة للمونتير" data-en="Explain the idea to the editor">شرح الفكرة للمونتير</strong></div>
-          <div><small data-ar="الخطوة التالية" data-en="Next Step">الخطوة التالية</small><strong data-ar="المونتير يبدأ النسخة الأولى" data-en="Editor starts the first cut">المونتير يبدأ النسخة الأولى</strong></div>
-          <div><small data-ar="على مين؟" data-en="Owner Now">على مين؟</small><strong data-ar="إدارة المشروع" data-en="Project Management">إدارة المشروع</strong></div><div class="pipeline-arrow">⌄</div>
-        </div>
-        <div class="pipeline-task-body">
-          <div class="pipeline-flow">
-            <div class="pipeline-step done"><small data-ar="تم" data-en="Done">تم</small><strong data-ar="الفكرة والمعالجة" data-en="Concept / Treatment">الفكرة والمعالجة</strong></div>
-            <div class="pipeline-step now"><small data-ar="الآن" data-en="Now">الآن</small><strong data-ar="شرح الفكرة للمونتير" data-en="Brief the editor">شرح الفكرة للمونتير</strong></div>
-            <div class="pipeline-step"><small data-ar="التالي" data-en="Next">التالي</small><strong>Rough Cut</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="مراجعة داخلية" data-en="Internal Review">مراجعة داخلية</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="تعديلات" data-en="Revisions">تعديلات</strong></div>
-            <div class="pipeline-step"><small data-ar="النهاية" data-en="End">النهاية</small><strong data-ar="إرسال واعتماد" data-en="Send & Approve">إرسال واعتماد</strong></div>
-          </div>
-          <div class="pipeline-foot"><div><small data-ar="الإجراء المطلوب الآن" data-en="Required Action Now">الإجراء المطلوب الآن</small><strong data-ar="شرح واضح للمونتير قبل بدء النسخة." data-en="Clearly brief the editor before the first cut.">شرح واضح للمونتير قبل بدء النسخة.</strong></div><div><small data-ar="المسؤول الحالي" data-en="Current Owner">المسؤول الحالي</small><strong data-ar="إدارة المشروع" data-en="Project Management">إدارة المشروع</strong></div><div><small data-ar="التعطيل" data-en="Blocker">التعطيل</small><strong data-ar="لا يوجد" data-en="None">لا يوجد</strong></div></div>
-        </div>
-      </article>
-
-      <article class="pipeline-task blocked" data-pipeline-group="waiting">
-        <div class="pipeline-task-head">
-          <div class="pipeline-task-name"><small>VIDEO</small><strong data-ar="فيديو سبل" data-en="SPL Video">فيديو سبل</strong><div class="pipeline-badge wait" data-ar="انتظار" data-en="Waiting">انتظار</div></div>
-          <div><small data-ar="الآن" data-en="Now">الآن</small><strong data-ar="بانتظار تنسيق عبدالله العمري" data-en="Waiting for Abdullah Al-Omari coordination">بانتظار تنسيق عبدالله العمري</strong></div>
-          <div><small data-ar="الخطوة التالية" data-en="Next Step">الخطوة التالية</small><strong data-ar="تأكيد التنسيق ثم بدء التنفيذ" data-en="Confirm coordination, then start execution">تأكيد التنسيق ثم بدء التنفيذ</strong></div>
-          <div><small data-ar="على مين؟" data-en="Owner Now">على مين؟</small><strong data-ar="عبدالله العمري" data-en="Abdullah Al-Omari">عبدالله العمري</strong></div><div class="pipeline-arrow">⌄</div>
-        </div>
-        <div class="pipeline-task-body">
-          <div class="pipeline-flow">
-            <div class="pipeline-step done"><small data-ar="تم" data-en="Done">تم</small><strong data-ar="تحديد المطلوب" data-en="Requirements Defined">تحديد المطلوب</strong></div>
-            <div class="pipeline-step wait"><small data-ar="الآن — انتظار" data-en="Now — Waiting">الآن — انتظار</small><strong data-ar="تنسيق عبدالله العمري" data-en="Abdullah Al-Omari Coordination">تنسيق عبدالله العمري</strong></div>
-            <div class="pipeline-step"><small data-ar="التالي" data-en="Next">التالي</small><strong data-ar="تأكيد المواد / التنفيذ" data-en="Confirm Materials / Execution">تأكيد المواد / التنفيذ</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="تنفيذ الفيديو" data-en="Execute Video">تنفيذ الفيديو</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="مراجعة وإرسال" data-en="Review & Send">مراجعة وإرسال</strong></div>
-            <div class="pipeline-step"><small data-ar="النهاية" data-en="End">النهاية</small><strong data-ar="اعتماد وتسليم" data-en="Approval & Delivery">اعتماد وتسليم</strong></div>
-          </div>
-          <div class="pipeline-foot"><div><small data-ar="الإجراء المطلوب الآن" data-en="Required Action Now">الإجراء المطلوب الآن</small><strong data-ar="متابعة التنسيق مع عبدالله العمري." data-en="Follow up with Abdullah Al-Omari.">متابعة التنسيق مع عبدالله العمري.</strong></div><div><small data-ar="المسؤول الحالي" data-en="Current Owner">المسؤول الحالي</small><strong data-ar="عبدالله العمري" data-en="Abdullah Al-Omari">عبدالله العمري</strong></div><div><small data-ar="التعطيل" data-en="Blocker">التعطيل</small><strong data-ar="التنفيذ متوقف حتى اكتمال التنسيق." data-en="Execution is blocked until coordination is complete.">التنفيذ متوقف حتى اكتمال التنسيق.</strong></div></div>
-        </div>
-      </article>
-
-      <article class="pipeline-task" data-pipeline-group="mine">
-        <div class="pipeline-task-head">
-          <div class="pipeline-task-name"><small>MULTI-VIDEO</small><strong data-ar="فيديوهات الميزانية" data-en="Budget Videos">فيديوهات الميزانية</strong><div class="pipeline-badge ready" data-ar="جاهز للبدء" data-en="Ready to Start">جاهز للبدء</div></div>
-          <div><small data-ar="الآن" data-en="Now">الآن</small><strong data-ar="الملفات وصلت ولم تبدأ الأفكار" data-en="Files received; concepts not started">الملفات وصلت ولم تبدأ الأفكار</strong></div>
-          <div><small data-ar="الخطوة التالية" data-en="Next Step">الخطوة التالية</small><strong data-ar="دراسة الملفات وبناء فكرة لكل فيديو" data-en="Study files and build a concept for each video">دراسة الملفات وبناء فكرة لكل فيديو</strong></div>
-          <div><small data-ar="على مين؟" data-en="Owner Now">على مين؟</small><strong data-ar="الفريق الإبداعي" data-en="Creative Team">الفريق الإبداعي</strong></div><div class="pipeline-arrow">⌄</div>
-        </div>
-        <div class="pipeline-task-body">
-          <div class="pipeline-flow">
-            <div class="pipeline-step done"><small data-ar="تم" data-en="Done">تم</small><strong data-ar="استلام الملفات" data-en="Files Received">استلام الملفات</strong></div>
-            <div class="pipeline-step now"><small data-ar="الآن" data-en="Now">الآن</small><strong data-ar="دراسة الملفات" data-en="Study Files">دراسة الملفات</strong></div>
-            <div class="pipeline-step"><small data-ar="التالي" data-en="Next">التالي</small><strong data-ar="فكرة لكل فيديو" data-en="Concept for Each Video">فكرة لكل فيديو</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="كتابة السيناريوهات" data-en="Write Scripts">كتابة السيناريوهات</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="اعتماد داخلي" data-en="Internal Approval">اعتماد داخلي</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="التنفيذ" data-en="Execution">التنفيذ</strong></div>
-            <div class="pipeline-step"><small data-ar="بعدها" data-en="Then">بعدها</small><strong data-ar="المراجعة والتعديلات" data-en="Review & Revisions">المراجعة والتعديلات</strong></div>
-            <div class="pipeline-step"><small data-ar="النهاية" data-en="End">النهاية</small><strong data-ar="إرسال واعتماد" data-en="Send & Approve">إرسال واعتماد</strong></div>
-          </div>
-          <div class="pipeline-foot"><div><small data-ar="الإجراء المطلوب الآن" data-en="Required Action Now">الإجراء المطلوب الآن</small><strong data-ar="دراسة الملفات واستخراج فكرة واضحة لكل فيديو." data-en="Study the files and define a clear concept for each video.">دراسة الملفات واستخراج فكرة واضحة لكل فيديو.</strong></div><div><small data-ar="المسؤول الحالي" data-en="Current Owner">المسؤول الحالي</small><strong data-ar="الفريق الإبداعي / إدارة المشروع" data-en="Creative Team / Project Management">الفريق الإبداعي / إدارة المشروع</strong></div><div><small data-ar="التعطيل" data-en="Blocker">التعطيل</small><strong data-ar="لا يوجد — المهمة لم تبدأ بعد." data-en="None — the task has not started yet.">لا يوجد — المهمة لم تبدأ بعد.</strong></div></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-
   <section class="page project-layout" id="project">
     <div class="project-head"><div><span class="eyebrow">PRODUCTION AI</span><h1 data-ar="نقال الطيب" data-en="Naqal Al-Tayeb">نقال الطيب</h1><p class="muted" data-ar="وزارة النقل والخدمات اللوجستية • فيلم حملة" data-en="Ministry of Transport and Logistics • Campaign Film">وزارة النقل والخدمات اللوجستية • فيلم حملة</p></div><div class="quick-actions"><button class="btn" data-ar="آخر سيناريو" data-en="Latest Script">آخر سيناريو</button><button class="btn" data-ar="الكول شيت" data-en="Call Sheet">الكول شيت</button><button class="btn primary" data-ar="اطلب من الوكيل" data-en="Ask Agent">اطلب من الوكيل</button></div></div>
     <div class="stage-grid">
@@ -172,11 +85,6 @@ let lang='ar';
 const pages=[...document.querySelectorAll('.page')];
 function showPage(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'})}
 document.querySelectorAll('[data-page],[data-page-go]').forEach(el=>el.addEventListener('click',()=>showPage(el.dataset.page||el.dataset.pageGo)));
-
-const pipelineTaskCards=[...document.querySelectorAll('.pipeline-task')];
-pipelineTaskCards.forEach(card=>card.querySelector('.pipeline-task-head')?.addEventListener('click',()=>card.classList.toggle('open')));
-document.querySelectorAll('[data-pipeline-filter]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-pipeline-filter]').forEach(x=>x.classList.toggle('active',x===btn));const f=btn.dataset.pipelineFilter;pipelineTaskCards.forEach(card=>card.style.display=(f==='all'||card.dataset.pipelineGroup===f)?'':'none')}));
-
 function applyLang(){const en=lang==='en';document.body.classList.toggle('en',en);document.documentElement.lang=lang;document.documentElement.dir=en?'ltr':'rtl';document.getElementById('langBtn').textContent=en?'AR':'EN';document.querySelectorAll('[data-ar][data-en]').forEach(el=>{el.textContent=en?el.dataset.en:el.dataset.ar});document.getElementById('search').placeholder=en?'Search projects, files and people...':'ابحث في المشاريع والملفات والأشخاص...';document.getElementById('chatInput').placeholder=en?'Type your request...':'اكتب طلبك...'}
 document.getElementById('langBtn').addEventListener('click',()=>{lang=lang==='ar'?'en':'ar';applyLang()});
 document.getElementById('newProject').addEventListener('click',()=>{const chat=document.getElementById('chat');const m=document.createElement('div');m.className='msg bot';m.textContent=lang==='ar'?'صف المشروع بصوتك أو كتابتك، وسأستخرج البيانات وأبني مسار العمل المناسب.':'Describe the project in speech or text and I will extract the data and build the right workflow.';chat.appendChild(m)});
